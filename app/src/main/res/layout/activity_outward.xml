@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_login_page"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toplayout_toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/middle_layout"
+            android:layout_marginBottom="10dp"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvOutwardLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/outwardTo"
+                        android:textColor="#808080"
+                        android:textSize="15dp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/cardTypeSpinnerLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rectangle_border">
+
+                        <com.omneAgate.wholeSaler.Util.NoDefaultSpinner
+                            android:id="@+id/outwardSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <RelativeLayout
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="#CBCBCB">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:padding="10dp"
+                                android:src="@drawable/drop_down_arrow" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/codeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvCodeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/selectCode"
+                        android:textColor="#808080"
+                        android:textSize="15dp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/selectCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rectangle_border">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/tvAutoCompleteCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@android:color/transparent"
+                            android:ems="13"
+                            android:hint="@string/selectCode1"
+                            android:imeOptions="actionDone"
+                            android:paddingLeft="15dp"
+                            android:singleLine="true"
+                            android:textColor="@color/outwardFontColor"
+                            android:textSize="15dp" />
+
+                        <RelativeLayout
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="#CBCBCB">
+
+                            <ImageView
+                                android:id="@+id/codeSpinner"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:background="@color/gray_1"
+                                android:padding="10dp"
+                                android:src="@drawable/drop_down_arrow" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/productTypeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvProductTypeLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/productType"
+                        android:textColor="#808080"
+                        android:textSize="15dp" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/productTypeSpinnerlay"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rectangle_border">
+
+                        <com.omneAgate.wholeSaler.Util.NoDefaultSpinner
+                            android:id="@+id/productTypeSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <RelativeLayout
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="#CBCBCB">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:padding="10dp"
+                                android:src="@drawable/drop_down_arrow" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/quantityLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/tvQuantityLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/selectQuanity"
+                        android:textColor="#808080"
+                        android:textSize="15dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rectangle_border">
+
+                        <EditText
+                            android:id="@+id/edtSelectQuantity"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="@drawable/rectangle_border"
+                            android:digits="0123456789."
+                            android:hint="0.000"
+                            android:inputType="number"
+                            android:maxLength="9"
+                            android:paddingLeft="15dp"
+                            android:singleLine="true"
+                            android:imeOptions="actionNext"
+                            android:nextFocusDown="@+id/edtNameDriver"
+                            android:textColor="@color/outwardFontColor"
+                            android:textSize="15dp" />
+
+                        <RelativeLayout
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:background="#CBCBCB">
+
+                            <TextView
+                                android:id="@+id/edtUnit"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:editable="false"
+                                android:enabled="true"
+                                android:gravity="center"
+                                android:text="@string/ltrs" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvNameLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/driverName"
+                        android:textColor="#808080"
+                        android:textSize="15dp" />
+
+
+                    <EditText
+                        android:id="@+id/edtNameDriver"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangle_border"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ."
+                        android:inputType="text|textNoSuggestions"
+                        android:maxLength="50"
+                        android:layout_marginTop="5dp"
+                        android:imeOptions="actionNext"
+                        android:nextFocusDown="@+id/edtContactNumber"
+                        android:textColor="@color/outwardFontColor"
+                        android:paddingLeft="15dp"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contactLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvContactNumberLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/driverContactNumber"
+                        android:textColor="#808080"
+                        android:textSize="15dp" />
+
+                    <EditText
+                        android:id="@+id/edtContactNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/rectangle_border"
+                        android:digits="0123456789"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="15dp"
+                        android:imeOptions="actionNext"
+                        android:nextFocusDown="@+id/edtTransporterName"
+                        android:textColor="@color/outwardFontColor"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/transporterNameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvTransporterNameLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transporterName"
+                        android:textColor="#808080"
+                        android:textSize="15dp" />
+
+
+                    <EditText
+                        android:id="@+id/edtTransporterName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangle_border"
+                        android:inputType="text|textNoSuggestions"
+                        android:maxLength="50"
+                        android:layout_marginTop="5dp"
+                        android:imeOptions="actionNext"
+                        android:nextFocusDown="@+id/edtVehicleNo"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/outwardFontColor"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/vehicleLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tvVehicleLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vehicleNo"
+                        android:textColor="#808080"
+                        android:textSize="15dp" />
+
+
+                    <EditText
+                        android:id="@+id/edtVehicleNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rectangle_border"
+                        android:imeOptions="actionDone"
+                        android:inputType="text|textNoSuggestions"
+                        android:maxLength="20"
+                        android:paddingLeft="15dp"
+                        android:textColor="@color/outwardFontColor"
+                        android:singleLine="true"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/middle_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/cancelbackground"
+                android:onClick="onCancel"
+                android:text="@string/cancel"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@color/loginBackground"
+                android:onClick="onSubmit"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+        <include
+            android:id="@+id/bottom"
+            layout="@layout/user_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+</LinearLayout>

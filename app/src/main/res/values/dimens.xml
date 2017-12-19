@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="undo_bar_height_holo">64dp</dimen>
+    <dimen name="undo_bar_height_kitkat">48dp</dimen>
+    <dimen name="undo_bar_height_lollipop">48dp</dimen>
+    <dimen name="undo_bar_max_width_lollipop">@null</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="corner_radius">1dp</dimen>
+    <!--QRCODE Related-->
+    <dimen name="standard_padding">8dip</dimen>
+    <dimen name="half_padding">4dip</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="title">16sp</dimen>
+    <dimen name="title_hint">14sp</dimen>
+    <dimen name="farmerreg_title">16sp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="forget_password">19sp</dimen>
+    <dimen name="location_text">18dp</dimen>
+    <dimen name="outward_size">16sp</dimen>
+    <dimen name="synctext">17sp</dimen>
+    <dimen name="unsynctext">17sp</dimen>
+    <dimen name="faulttext">20dp</dimen>
+    <dimen name="restorestring">16dp</dimen>
+    <dimen name="retriivestring">16dp</dimen>
+    <dimen name="logoutstring">16dp</dimen>
+    <dimen name="syncedtext">17sp</dimen>
+    <dimen name="unsyncedtext">17sp</dimen>
+</resources>

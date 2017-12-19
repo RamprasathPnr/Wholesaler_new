@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/select_language"
+            android:icon="@drawable/languageselection"
+            android:title="@string/languageChange" />
+        <item
+            android:id="@+id/Change_Url"
+            android:icon="@drawable/web_icon"
+            android:title="@string/changeUrl" />
+
+        <item
+            android:id="@+id/Device_info"
+            android:icon="@drawable/devicedetails"
+            android:title="@string/device_details" />
+
+    </group>
+
+
+</menu>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sync_background">
+
+
+    <RelativeLayout
+        android:id="@+id/godown_manage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="100"
+            android:progressDrawable="@drawable/circle_progress_background"
+            android:id="@+id/progressBar" />
+
+        <ProgressBar
+            android:id="@+id/circle_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:max="100"
+            android:rotation="-90"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circle_progress_foreground"
+            android:layout_alignBottom="@+id/progressBar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="0%"
+            android:fontFamily="bold"
+            android:textSize="40dp"
+            android:textColor="@color/loginBackground"
+            android:id="@+id/percentagetct"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="continue"
+        android:background="@drawable/button_login"
+        android:textColor="@color/white"
+        android:id="@+id/syncContinue"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Please Wait"
+        android:id="@+id/textView"
+        android:fontFamily="bold"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textColor="#303f9f"
+        android:layout_below="@+id/godown_manage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DataBase Sync InProgress"
+        android:id="@+id/textView2"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="#303f9f"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        android:id="@+id/re"
+        android:layout_below="@+id/textView2"
+        android:layout_above="@+id/syncContinue">
+
+        <TextView
+            android:id="@+id/downloadCompleted"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Downloading files......."
+            android:textColor="#222222"
+            android:textSize="18dp" />
+
+        <ScrollView
+            android:id="@+id/scrollData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,282 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.omneAgate.wholeSaler.activity.DashboardActivity">
+
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_toplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/topLayout"
+         android:layout_above="@+id/bottom_layout"
+        android:id="@+id/dashboardOuterLayout">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/dashboardImageLayout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginTop="1.5dp"
+                android:layout_marginBottom="1.5dp"
+                android:id="@+id/dashboardImageFirstRowLayout">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/outwardKeroceneLayout"
+                    android:background="@drawable/dashboard_item_background"
+                    android:layout_marginRight="1.5dp"
+                    android:layout_marginLeft="1.5dp"
+                    android:onClick="restoreDB"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/restore_db_grey"
+
+                        android:layout_centerVertical="true"
+                       android:id="@+id/ivKeroceneOutward"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/ivKeroceneOutward"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/restoration"
+                        android:id="@+id/tvKeroceneOutwardLabel"/>
+
+
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/inwardKeroceneLayout"
+                    android:background="@drawable/dashboard_item_background"
+                    android:layout_marginRight="1.5dp"
+                    android:layout_marginLeft="1.5dp"
+                    android:onClick="retrieveDB"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/retrive_db_grey"
+                        android:id="@+id/ivKeroceneInward"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/ivKeroceneInward"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:text="@string/retrieve"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tvKeroceneInwardLabel"/>
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="1.5dp"
+                    android:layout_marginLeft="1.5dp"
+                    android:background="@drawable/dashboard_item_background"
+                    android:id="@+id/transactionLayout"
+                    android:onClick="findLocation"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/geo_loc_gray"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/ivTransaction"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/ivTransaction"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:text="@string/geolocation"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tvTransactionLabel"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginTop="1.5dp"
+                android:layout_marginBottom="1.5dp"
+                android:onClick="getStatistics"
+                android:id="@+id/dashboardImageSecondRowLayout">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/stockPositionsLayout"
+                    android:layout_marginRight="1.5dp"
+                    android:layout_marginLeft="1.5dp"
+                    android:background="@drawable/dashboard_item_background"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/sys_stats_grey"
+                        android:id="@+id/ivStockPosition"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/ivStockPosition"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:text="@string/statistics"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tvStockPositionLabel"/>
+
+
+                </RelativeLayout>
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/associatedShopsLayout"
+                    android:layout_marginRight="1.5dp"
+                    android:layout_marginLeft="1.5dp"
+                    android:onClick="associatedShopClick"
+                    android:background="@drawable/dashboard_item_background"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/ivAssociatedShops"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/ivAssociatedShops"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tvAssociatedShopsLabel"/>
+
+
+                </RelativeLayout>
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/emptyLayout"
+                    android:onClick="emptyLayoutclick"
+                    android:background="@drawable/dashboard_item_background"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/ivEmpty"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_marginTop="10dp"
+                        android:layout_centerInParent="true"
+                        android:layout_below="@+id/ivEmpty"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/tvEmptyLabel"/>
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <include
+        android:id="@+id/bottom_layout"
+        layout="@layout/user_bottom_other_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

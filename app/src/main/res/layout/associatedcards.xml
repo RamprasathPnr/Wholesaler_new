@@ -1,0 +1,261 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.omneAgate.wholeSaler.activity.TransactionHistoryActivity"
+    android:id="@+id/resss">
+
+    <include
+        android:id="@+id/topLayout"
+        layout="@layout/layout_toplayout_outward"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true" />
+
+
+    <LinearLayout
+        android:id="@+id/keroseneOutwardlinearLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="#777777"
+        android:orientation="horizontal"
+        android:layout_below="@+id/topLayout">
+
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp">
+
+
+
+            <TextView
+                android:id="@+id/shoptype"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/shoptype"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+
+                />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/shopcode"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/shopcode"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            >
+
+            <TextView
+                android:id="@+id/shopname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/shopname"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/person_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="@string/contactname"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/personnumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="@string/contactnunver"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        style="@style/scrollbar_shape_style"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/keroseneOutwardlinearLayoutTitle"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:fadeScrollbars="false"
+        android:fillViewport="false"
+        android:layout_above="@+id/navigationLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/listView_kerosene_stock_outward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearLayoutNoRecords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvNoRecords"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/no_records"
+                    android:textColor="#000000"
+                    android:textSize="23dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/navigationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="right"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_alignParentEnd="true">
+
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="60dp"
+            android:id="@+id/syncLayout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:background="@drawable/sync_background"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="64dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:id="@+id/lin">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/icon_filter"
+                    android:id="@+id/imageSync"/>
+
+            </LinearLayout>
+
+             <RelativeLayout
+                android:id="@+id/cardTypeSpinnerLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp">
+
+                <com.omneAgate.wholeSaler.Util.NoDefaultSpinner
+                    android:id="@+id/outwardSpinner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/rectangle_border"
+                    android:layout_alignParentBottom="true" />
+
+                <RelativeLayout
+                    android:layout_width="55dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_spinner"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/img" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:background="#777777"
+            android:onClick="onClose"
+            android:text="@string/close"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottom_layout"
+        android:layout_marginTop="5dp"
+        layout="@layout/user_bottom_other_screen"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+
+
+
+</RelativeLayout>

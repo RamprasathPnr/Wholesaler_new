@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="headerAllPageEnglish">CIVIL  SUPPLIES  AND  CONSUMER  PROTECTION  DEPARTMENT</string>
+    <string name="headerAllPage">உணவுப் பொருள் வழங்கல் மற்றும் நுகர்வோர் பாதுகாப்புத் துறை</string>
+    <string name="technicalFault">உங்கள் அமர்வு முடிவடைந்துவிட்டது. மீண்டும் முயற்சிக்கவும் அல்லது உதவி மையத்தை  தொடர்பு கொள்ளவும்</string>
+    <string name="loginPageCopyright">பதிப்புரிமை தகவல் \u00A9 2015 TNPDS | உதவிமைய எண் - 1967 / 1800-425-5901 | </string>
+    <string name="date_validation">கடைசி தேதியை விட ஆரம்ப தேதி அதிகமாக உள்ளது </string>
+    <string name="crashmsg">தற்காலிக சேவை நிறுத்தம்</string>
+    <string name="loginUserNameEmpty">பயனர் பெயர் இல்லை </string>
+    <string name="loginPasswordEmpty">கடவுச் சொல் இல்லை</string>
+    <string name="onlineText">நிகழ்நிலை</string>
+    <string name="offlineText">அகழ்நிலை </string>
+    <string name="ok">சரி </string>
+    <string name="cancel">ரத்து செய் </string>
+    <string name="changeUrl">முகவரி மாற்றம் </string>
+    <string name="device_details">சாதனத் தகவல்</string>
+    <string name="deviceId">சாதன எண்</string>
+    <string name="app_name">WholesalerApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="noFileSdcard"> No file in sdcard back up</string>
+    <string name="oldDbBackup">Existing database copied into backup folder</string>
+    <string name="backupFolderNot"> backup folder is not created</string>
+    <string name="connectionError">இணைப்பு ஏற்படுத்த இயலவில்லை. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="connectionRefused">இணைப்பு ஏற்படுத்த இயலவில்லை. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="serviceNotAvailable">இணைப்பு ஏற்படுத்த இயலவில்லை. மீண்டும் முயற்சிக்கவும்.</string>
+    <string name="pds">பொது விநியோகத் திட்டம்</string>
+    <string name="wholesale">மண்ணெண்ணெய் மொத்த விற்பனை பயன்பாடு</string>
+    <string name="userName">பயனர் பெயர்</string>
+    <string name="password">கடவுச்சொல்</string>
+    <string name="login">உள்நுழை</string>
+    <string name="forgetPassword">கடவுச்சொல்லை மறந்துவிட்டீர்களா?</string>
+    <string name="resetPassword">Reset Password</string>
+    <string name="contactHelpDesk">உங்கள் கடவுச்சொல்லை மீட்டமைக்க, தொடர்பு மையத்தைத் அணுகவும். </string>
+    <string name="helpDeskNumber">1967 / 1800-425-5901</string>
+    <string name="languageSelection">Select Language</string>
+    <string name="languageSelectionTa">மொழித் தேர்வு</string>
+    <string name="languageChange">மொழித் தேர்வு </string>
+    <string name="tamil">தமிழ்</string>
+    <string name="publicUrl">Change URL </string>
+    <string name="logout">வெளியேறு</string>
+    <string name="logoutString">தாங்கள் வெளியேற விரும்புகிறீர்களா ?</string>
+    <string name="sales">தொடர்க</string>
+    <string name="caution">எச்சரிக்கை</string>
+    <string name="timeDiff">சர்வர் , சாதனம் நேர வித்தியாசம்</string>
+    <string name="nextDay">காலை </string>
+    <string name="changeTime">நேரத்தை மற்ற சரியை அழுத்தவும் </string>
+    <string name="welcome_view">வணக்கம்,</string>
+    <string name="last_login">கடைசி உள்நுழைவு :</string>
+    <string name="wholesale_profile">கடை விவரம்</string>
+    <string name="wholesale_code">கடை குறியீடு</string>
+    <string name="noNetworkConnection">இணைய இணைப்பு இல்லை</string>
+    <string name="reference_no">குறிப்பு எண்</string>
+    <string name="date"> தேதி:</string>
+    <string name="kerosene">மண்ணெண்ணெய்</string>
+    <string name="outwardTo">வெளியீடு *</string>
+    <string name="selectCode">குறியீடு தேர்வுசெய் *</string>
+    <string name="selectCode1">குறியீடு தேர்வுசெய் </string>
+    <string name="submit">பதிவு செய்</string>
+    <string name="confirm">உறுதி செய்</string>
+    <string name="selectQuanity">அளவு பதிவுசெய் *</string>
+    <string name="ltrs">லி</string>
+    <string name="vehicleNo">வாகன எண் *</string>
+    <string name="name">பெயர்</string>
+    <string name="inCorrectUnamePword">  தவறான பயனர் பெயர் அல்லது கடவுச்சொல்</string>
+    <string name="driverName">ஓட்டுனர் பெயர்</string>
+    <string name="driverContactNumber">ஓட்டுனர் தொடர்பு எண் *</string>
+    <string name="dashboard">முகப்பு</string>
+    <string name="outward">மண்ணெண்ணெய் வெளியீடு</string>
+    <string name="outwardUpdatedSuccessfully">பொருட்கள் அனுப்பப்பட்டதற்கான அத்தாட்சி பதிவு செய்யப்பட்டது</string>
+    <string name="selectProductType">பொருள் வகை தேர்வு செய்</string>
+    <string name="ProductType">பொருள் வகை தேர்வு செய்</string>
+    <string name="selectRecipientType">பெறுநர் வகை தேர்வு செய்</string>
+    <string name="selectRecipientCode"> கடை குறியீடு தேர்வு செய் </string>
+    <string name="select_todate">கடைசி தேதி தேர்ந்தெடுக்கவும் </string>
+    <string name="select_fromdate">ஆரம்ப தேதி தேர்ந்தெடுக்கவும்  </string>
+    <string name="enterQuantity">அளவைபதிவு செய்</string>
+    <string name="enterVehicleNumber">வாகன எண் உள்ளிடவும்</string>
+    <string name="enterDriverName">ஓட்டுனர் பெயரை உள்ளிடவும். </string>
+    <string name="enter10digitMobileNumber">10 இலக்க மொபைல் எண்ணை உள்ளிடவும்</string>
+    <string name="invalidMobileNumber">தவறான மொபைல் எண் </string>
+    <string name="transporterName">வாகன நிறுவனம்</string>
+    <string name="code">   குறியீடு </string>
+    <string name="noShopsAvailable">இந்த கடை குறியீடு இல்லை.</string>
+    <string name="edit">திருத்து</string>
+    <string name="productType">பொருள் வகை *</string>
+    <string name="productQuantity">அளவு</string>>
+    <string name="transactions">பரிவர்த்தனைகள்</string>
+    <string name="totalTransaction">மொத்த பரிவர்த்தனைகள்  :</string>
+    <string name="transNo">எண்</string>
+    <string name="dates"> தேதி</string>
+    <string name="no_records">பரிவர்த்தனை இல்லை</string>
+    <string name="outwardKerocene">மண்ணெண்ணெய் வெளியீடு</string>
+    <string name="allocation">ஒதுக்கீடு</string>
+    <string name="stockPositions">பொருட்கள் நிலவரம்</string>
+    <string name="associatedShops">இணைக்கப்பட்ட கடைகள்</string>
+    <string name="close"> பின்செல் </string>
+    <string name="inCorrectUserCredential">உங்களுக்கு அதிகார பகிர்வு இல்லை</string>
+    <string name="deviceRegistration">சாதனம் பதிவு செய்யப்பட்டுவிட்டது. உதவி மையத்தை தொடர்புகொள்ளவும்</string>
+    <string name="deviceInvalid">சாதனம் முடக்கப்பட்டுள்ளது</string>
+    <string name="unassociated">சாதனம் எந்த கடையுடனும் சேரவில்லை</string>
+    <string name="status">நிலை</string>
+    <string name="storeInactive">கடை உபயோகத்தில் இல்லை</string>
+    <string name="errorUpgrade">மேம்படுத்துதல் பிழை. உதவி மையத்தை தொடர்பு கொள்ளவும்</string>
+    <string name="downloadgingFile">பதிவிறக்கப்படுகிறது ...</string>
+    <string name="internalError">உள்ளீடு பிழை</string>
+    <string name="externalStorageNotWritable">மெமரி கார்டில் எழுத இயலாது</string>
+    <string name="externalStorageNotAvailable">மெமரி கார்ட் இல்லை</string>
+    <string name="noFreeInSdcard">மெமரி கார்டில் இடம் இல்லை</string>
+    <string name="restoreHead">நினைவகத்தில் இருந்து எடு</string>
+    <string name="retrieveDbString">நீங்கள் நினைவகத்தில் இருந்து பழைய கோப்புகளை எடுக்க விரும்புகிறீர்களா ? </string>
+    <string name="restorationDbString">நீங்கள் நினைவகத்தில் இருந்து தரவுதளத்தை திரும்ப மாற்ற விரும்புகிறீர்களா ? </string>
+    <string name="restoration">தரவுத்தள உள்ளிடு</string>
+    <string name="retrieve">தரவுத்தள வெளியீடு</string>
+    <string name="hashMethod">SHA-256</string>
+    <string name="hashIterations">1000</string>
+    <string name="saltSize">10</string>
+    <string name="poolSize">16</string>
+    <string name="loginInvalidUserPassword">தவறான பயனர் பெயர்  கடவுச் சொல்</string>
+    <string name="invalidQuantity">தவறான அளவு </string>
+    <string name="statistics">சாதன தகவல்</string>
+    <string name="geolocation">பூகோள அமைவிடம்</string>
+    <string name="yes">ஆம்</string>
+    <string name="no">இல்லை</string>
+    <string name="successInUpdate">இடம் பதிவு செய்யப்பட்டுவிட்டது</string>
+    <string name="end_date">கடைசி தேதி</string>
+    <string name="from_date">தேதியிலிருந்து</string>
+    <string name="sync">ஒத்திசைக்கப்பட்டுள்ள பதிவு</string>
+    <string name="unsync">ஒத்திசைக்காத பதிவு</string>
+    <string name="shopcode">குறியீடு</string>
+    <string name="shoptype">கடை வகை</string>
+    <string name="shopname">கடை பெயர்</string>
+    <string name="contactname">தொடர்பு நபர்</string>
+    <string name="contactnunver">தொடர்பு  எண்</string>
+    <string name="invaliddate"> தவறான தேதி </string>
+    <string name="filter">தேடல்</string>
+    <string name="title_activity_statistics">StatisticsActivity</string>
+    <string-array name="custom_months">
+        <item>JAN</item>
+        <item>Feb</item>
+        <item>MARCH</item>
+        <item>April</item>
+        <item>MAY</item>
+        <item>June</item>
+        <item>JULY</item>
+        <item>Aug</item>
+        <item>SEPT</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>DEC</item>
+    </string-array>
+    <string-array name="custom_weekdays">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+    <string name="whole_mobile_no">விற்பனையாளர் தொடர்பு எண்</string>
+    <string name="whole_seller_name">விற்பனையாளர் பெயர் </string>
+    <string name="whole_address">கடை  முகவரி</string>
+    <string name="wholecode">கடை குறியீடு </string>
+    <string name="profile">கடை விவரம் </string>
+    <string name="profile1">கடை </string>
+
+
+    <!--Qr code-->
+    <string name="app_picker_name">Applications</string>
+    <string name="bookmark_picker_name">Bookmarks</string>
+    <string name="button_add_calendar">Add to calendar</string>
+    <string name="button_add_contact">Add contact</string>
+    <string name="button_book_search">Book Search</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_custom_product_search">Custom search</string>
+    <string name="button_dial">Dial number</string>
+    <string name="button_email">Send email</string>
+    <string name="button_get_directions">Get directions</string>
+    <string name="button_mms">Send MMS</string>
+    <string name="button_ok">OK</string>
+    <string name="button_open_browser">Open browser</string>
+    <string name="button_product_search">Product search</string>
+    <string name="button_search_book_contents">Search contents</string>
+    <string name="button_share_app">Application</string>
+    <string name="button_share_bookmark">Bookmark</string>
+    <string name="button_share_by_email">Share via email</string>
+    <string name="button_share_by_sms">Share via SMS</string>
+    <string name="button_share_clipboard">Clipboard</string>
+    <string name="button_share_contact">Contact</string>
+    <string name="button_show_map">Show map</string>
+    <string name="button_sms">Send SMS</string>
+    <string name="button_web_search">Web search</string>
+    <string name="button_wifi">Connect to Network</string>
+    <string name="contents_contact">Contact info</string>
+    <string name="contents_email">Email address</string>
+    <string name="contents_location">Geographic coordinates</string>
+    <string name="contents_phone">Phone number</string>
+    <string name="contents_sms">SMS address</string>
+    <string name="contents_text">Plain text</string>
+    <string name="history_clear_text">Clear history</string>
+    <string name="history_clear_one_history_text">Clear</string>
+    <string name="history_email_title">Barcode Scanner history</string>
+    <string name="history_empty">Empty</string>
+    <string name="history_empty_detail">No barcode scans have been recorded</string>
+    <string name="history_send">Send history</string>
+    <string name="history_title">History</string>
+    <string name="menu_encode_mecard">Use MECARD</string>
+    <string name="menu_encode_vcard">Use vCard</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_history">History</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_share">Share</string>
+    <string name="msg_bulk_mode_scanned">Bulk mode: barcode scanned and saved</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="msg_default_format">Format</string>
+    <string name="msg_default_meta">Metadata</string>
+    <string name="msg_default_mms_subject">Hi</string>
+    <string name="msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
+    <string name="msg_default_time">Time</string>
+    <string name="msg_default_type">Type</string>
+    <string name="msg_encode_contents_failed">Could not encode a barcode from the data provided.</string>
+    <string name="msg_error">Error</string>
+    <string name="msg_google_books">Google</string>
+    <string name="msg_google_product">Google</string>
+    <string name="msg_intent_failed">Sorry, the requested application could not be launched. The barcode contents may be invalid.</string>
+    <string name="msg_invalid_value">Invalid value</string>
+    <string name="msg_redirect">Redirect</string>
+    <string name="msg_sbc_book_not_searchable">Sorry, this book is not searchable.</string>
+    <string name="msg_sbc_failed">Sorry, the search encountered a problem.</string>
+    <string name="msg_sbc_no_page_returned">No page returned</string>
+    <string name="msg_sbc_page">Page</string>
+    <string name="msg_sbc_results">Results</string>
+    <string name="msg_sbc_searching_book">Searching book\u2026</string>
+    <string name="msg_sbc_snippet_unavailable">Snippet not available</string>
+    <string name="msg_share_explanation">You can share data by displaying a barcode on your screen and scanning it with another phone.</string>
+    <string name="msg_share_text">Or type some text and press Enter</string>
+    <string name="msg_sure">Are you sure?</string>
+    <string name="msg_unmount_usb">Sorry, the SD card is not accessible.</string>
+    <string name="preferences_actions_title">When a barcode is found\u2026</string>
+    <string name="preferences_auto_focus_title">Use auto focus</string>
+    <string name="preferences_auto_open_web_title">Open web pages automatically</string>
+    <string name="preferences_bulk_mode_summary">Scan and save many barcodes continuously</string>
+    <string name="preferences_bulk_mode_title">Bulk scan mode</string>
+    <string name="preferences_copy_to_clipboard_title">Copy to clipboard</string>
+    <string name="preferences_custom_product_search_summary" formatted="false">Substitutions: %s = contents, %f = format, %t = type</string>
+    <string name="preferences_custom_product_search_title">Custom search URL</string>
+    <string name="preferences_decode_1D_industrial_title">1D Industrial</string>
+    <string name="preferences_decode_1D_product_title">1D Product</string>
+    <string name="preferences_decode_Aztec_title">Aztec</string>
+    <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+    <string name="preferences_decode_PDF417_title">PDF417 (β)</string>
+    <string name="preferences_decode_QR_title">QR Codes</string>
+    <string name="preferences_device_bug_workarounds_title">Device Bug Workarounds</string>
+    <string name="preferences_disable_barcode_scene_mode_title">No barcode scene mode</string>
+    <string name="preferences_disable_continuous_focus_summary">Use only standard focus mode</string>
+    <string name="preferences_disable_continuous_focus_title">No continuous focus</string>
+    <string name="preferences_disable_exposure_title">No exposure</string>
+    <string name="preferences_disable_metering_title">No metering</string>
+    <string name="preferences_front_light_summary">Improves scanning in low light on some phones, but may cause glare. Does not work on all phones.</string>
+    <string name="preferences_front_light_title">Use front light</string>
+    <string name="preferences_front_light_auto">Automatic</string>
+    <string name="preferences_front_light_off">Off</string>
+    <string name="preferences_front_light_on">On</string>
+    <string name="preferences_general_title">General settings</string>
+    <string name="preferences_history_summary">Store your scans in History</string>
+    <string name="preferences_history_title">Add to History</string>
+    <string name="preferences_invert_scan_title">Invert scan</string>
+    <string name="preferences_invert_scan_summary">Scan for white barcodes on black background. Not available on some devices.</string>
+    <string name="preferences_name">Settings</string>
+    <string name="preferences_orientation_title">No automatic rotation</string>
+    <string name="preferences_play_beep_title">Beep</string>
+    <string name="preferences_remember_duplicates_summary">Store multiple scans of the same barcode in History</string>
+    <string name="preferences_remember_duplicates_title">Remember duplicates</string>
+    <string name="preferences_result_title">Result settings</string>
+    <string name="preferences_scanning_title">When scanning for barcodes, decode\u2026</string>
+    <string name="preferences_search_country">Search country</string>
+    <string name="preferences_supplemental_summary">Try to retrieve more information about the barcode contents</string>
+    <string name="preferences_supplemental_title">Retrieve more info</string>
+    <string name="preferences_vibrate_title">Vibrate</string>
+    <string name="result_address_book">Found contact info</string>
+    <string name="result_calendar">Found calendar event</string>
+    <string name="result_email_address">Found email address</string>
+    <string name="result_geo">Found geographic coordinates</string>
+    <string name="result_isbn">Found book</string>
+    <string name="result_product">Found product</string>
+    <string name="result_sms">Found SMS address</string>
+    <string name="result_tel">Found phone number</string>
+    <string name="result_text">Found plain text</string>
+    <string name="result_uri">Found URL</string>
+    <string name="result_wifi">Found WLAN Configuration</string>
+    <string name="sbc_name">Google Book Search</string>
+    <string name="wifi_changing_network">Requesting connection to network\u2026</string>
+
+    <!--Systtem Statistics -->
+    <string name="deviceNumber">விற்பனை முனையத்தின் எண்</string>
+    <string name="health"> நிலமை </string>
+    <string name="scale"> அளவுகோல் </string>
+    <string name="level"> அளவு </string>
+    <string name="plugged"> சொருகப்பட்டு </string>
+    <string name="devStatus"> நிலை  </string>
+    <string name="technology"> தொழில் நுட்பம் </string>
+    <string name="temparature"> வெப்பநிலை </string>
+    <string name="voltage"> மின்னழுத்த அளவு </string>
+    <string name="present"> தற்போதைய நிலை </string>
+    <string name="latitude"> அட்சரேகை </string>
+    <string name="longitude"> தீர்க்கரேகை  </string>
+    <string name="noofBeneficiary">பயனாளிகளின் எண்ணிக்கை </string>
+    <string name="versionNumber"> பதிப்பு எண்  </string>
+    <string name="noofunsyncbill"> ஒருங்கிணைக்கப்படாத விலை பட்டியல்கள் </string>
+    <string name="unsyncedInward"> ஒருங்கிணைக்கப்படாத உள்வரவு  </string>
+    <string name="versionName"> பதிப்பு பெயர் </string>
+    <string name="unsyncAdjustment"> ஒருங்கிணைக்கப்படாத சரிசெய்தல் </string>
+    <string name="cpuUtilization"> சிபியு பயன்படுத்துதல் </string>
+    <string name="appInstalledTime">பயன்பாட்டு நிறுவப்பட்ட நேரம் </string>
+    <string name="freeMemory"> பயன்படுத்தப்படாத மெம்மரி</string>
+    <string name="appUpdatedTime"> பயன்பாட்டு மேம்படுத்தப்பட்ட நேரம் </string>
+    <string name="totalMemory"> மொத்த மெம்மரி </string>
+    <string name="memoryUsed">பயன்படுத்தப்பட்ட மெம்மரி</string>
+    <string name="harddiskSize"> நிலைவட்டு அளவு  </string>
+    <string name="networkType"> நெட்வொர்க் வகை  </string>
+    <string name="simId"> சிம் அடையாள எண் </string>
+    <string name="unsyncLogin"> ஒருங்கிணைக்கப்படாத உள்நுழைவு</string>
+    <string name="noofbunk"> மண்ணெண்ணெய் கடைகள்  எண்ணிக்கை </string>
+    <string name="noofrrc"> ஆர்ஆர்சி எண்ணிக்கை </string>
+    <string name="nofps"> நியாய விலைக் கடைகள் எண்ணிக்கை </string>
+    <string name="nounsync"> ஒருங்கிணைக்கப்படாத பரிவர்த்தனைகள் </string>
+    <string name="reg_count">பதிவுசெய்யப்பட்ட எண்ணிக்கை </string>
+    <string name="battery_level"> பேட்டரி நிலை </string>
+
+    <string name="outwardsync"> பரிவர்த்தனைகள் ஒருங்கிணைக்கப்படுகிறது, காத்திருக்கவும்…</string>
+
+    <string name="userInactive">பயனர் செயல்படுத்தப்படவில்லை</string>
+    <string name="downloading_files"> கோப்பு பதிவிறக்கப் படுகிறது..  </string>
+    <string name="sync_page_msg">தயவு செய்து காத்திருக்கவும்.. தரவுத்தளம் ஒருங்கிணைக்கப் படுகிறது..</string>
+
+    <string name="sync_page_completed">தரவுத்தளம்  ஒருங்கிணைத்தள் முடிந்தது</string>
+
+
+    <string name="download_completed">பதிவிறக்கம் முடிந்தது   </string>
+    <string name="locationreceived"> அமைவிடம் </string>
+    <string name="locationreceivedtitle">இந்த அமைவிடம் மண்ணெண்ணெய் மொத்த விற்பனையாளர் அமைவிடமாக பொறுத்தப்படும்</string>
+    <string name="continuestring"> தொடர விரும்புகிறீர்களா? </string>
+    <string name="totalnumbershops">கடைகள் மொத்த எண்ணிக்கை : </string>
+    <string name="TransactionNumber"> பரிவர்த்தனை எண்  </string>
+    <string name="outwardandCode"> வெளியீடு* /  குறியீடு</string>
+    <string name="outwardStatus">வெளியீடு நிலை </string>
+
+</resources>

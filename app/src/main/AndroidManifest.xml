@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.omneAgate.wholeSaler.activity"
+    android:versionCode="3"
+    android:versionName="1.5R1">
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+
+    <supports-screens android:largeScreens="true" />
+    <supports-screens android:xlargeScreens="true" />
+    <supports-screens android:smallScreens="true" />
+
+    <uses-permission android:name="android.permission.INSTALL_PACKAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+
+    <application
+        android:name=".GlobalAppState"
+        android:allowBackup="true"
+        android:clearTaskOnLaunch="true"
+        android:icon="@drawable/imgo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:launchMode="singleTask"
+        android:stateNotNeeded="true"
+        android:theme="@style/AppTheme">
+        <receiver
+            android:name=".NetworkChangeReceiver"
+            android:label="NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE">
+                    <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DashboardActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".OutwardConformationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".OutwardEntryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".AdminActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SyncPageActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <service android:name="com.omneAgate.wholeSaler.service.UpdateDataService" />
+        <service android:name="com.omneAgate.wholeSaler.service.OfflineTransactionManager" />
+
+        <activity
+            android:name=".TransactionHistoryActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TransactionUnsyncActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".TransactionSyncActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".RegistrationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AutoUpgrationActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".StatisticsActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".SearchHistoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".AssociatedCardActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.omneAgate.wholeSaler.CrashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.omneAgate.SEND_LOG" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

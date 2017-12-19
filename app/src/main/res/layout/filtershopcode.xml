@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/spinner_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/topLayout"
+        android:id="@+id/mainLayout">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+            android:id="@+id/outwardCodeLayout">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/outwardLayout"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvOutwardLabel"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_margin="5dp"
+                    android:text="@string/shoptype"/>
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/image_selection_spinner"
+                    android:id="@+id/outwardSpinner">
+                </Spinner>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/codeLayout"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCodeLabel"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:layout_margin="5dp"
+                    android:text="@string/selectCode"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <AutoCompleteTextView
+                        android:layout_width="358dp"
+                        android:layout_height="55dp"
+                        android:id="@+id/tvAutoCompleteCode"
+                        android:paddingLeft="25dp"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:ems="13"
+                        android:background="@drawable/rectangle_border"
+                        android:textSize="25dp"/>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_weight="7.5"
+                        android:id="@+id/codeSpinner"
+
+                        android:background="@drawable/icon_spinner"/>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/buttonlay1"
+            android:layout_gravity="right">
+
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:id="@+id/btnCancel"
+                android:text="@string/cancel"
+                android:onClick="onCancel"
+                android:textColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:background="@color/ash"
+
+                />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:id="@+id/btnSubmit"
+                android:text="@string/submit"
+                android:onClick="onSubmit"
+                android:textSize="18dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="14.40"
+                android:textColor="@color/white"
+                android:background="@color/darkRose"
+
+                />
+
+
+
+
+        </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>

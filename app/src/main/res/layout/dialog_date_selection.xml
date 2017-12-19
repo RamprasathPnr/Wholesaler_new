@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:background="@color/status_text"
+    android:orientation="vertical">
+
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mcv_arrowColor="@color/loginBackground"
+        app:mcv_dateTextAppearance="@style/CustomDayTextAppearance"
+        app:mcv_firstDayOfWeek="monday"
+        app:mcv_headerTextAppearance="?android:attr/textAppearanceMedium"
+        app:mcv_monthLabels="@array/custom_months"
+        app:mcv_selectionColor="@color/loginBackground"
+        app:mcv_showOtherDates="false"
+        app:mcv_tileSize="40dp"
+        app:mcv_weekDayLabels="@array/custom_weekdays"
+        app:mcv_weekDayTextAppearance="?android:attr/textAppearanceMedium" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonNwCancel"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/cancel"
+            android:background="@color/status_text"
+            android:textColor="@color/loginBackground" />
+
+        <Button
+            android:id="@+id/buttonNwOk"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_weight="1"
+            android:text="@string/ok"
+            android:background="@color/status_text"
+            android:textColor="@color/loginBackground" />
+    </LinearLayout>
+</LinearLayout>

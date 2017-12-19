@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#114b10</color>
+
+
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="dialog_view_background">#eeeeee</color>
+    <color name="login_background">#00322a</color>
+    <color name="transparent">#00000000</color>
+    <color name="darkRose">#CC0033</color>
+    <color name="focussedColorDashboard">#fc830a</color>
+    <color name="red">#ff4800</color>
+    <color name="ash">#4a4d4e</color>
+    <color name="grey">#4a4d4e</color>
+    <color name="textColorDashboard">#333333</color>
+    <color name="keyboard_key">#474747</color>
+    <color name="green">#6cc214</color>
+    <color name="orange">#ff6600</color>
+    <color name="bluishgreen">#21b6a8</color>
+    <color name="pages_top_head">#004d40</color>
+    <color name="login_footer_text">#f9f9f9</color>
+    <color name="dark_slate_gray">#2F4F4F</color>
+    <color name="gray_2">#AFAFAF</color>
+    <color name="gray_1">#C0C0C0</color>
+
+    <color name="contents_text">#ff000000</color>
+    <color name="encode_view">#ffffffff</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="result_minor_text">#ffc0c0c0</color>
+    <color name="result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="result_text">#ffffffff</color>
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="status_text">#ffffffff</color>
+    <color name="result_view">#b0000000</color>
+    <color name="OutwardListItemColorReceived">#cdd1d6</color>
+    <color name="loginBackground">#326FD4</color>
+    <color name="cancelbackground">#979797</color>
+    <color name="mobile_number">#57AE3B</color>
+    <color name="StatisticsColor">#6D6D6D</color>
+    <color name="outwardFontColor">#808080</color>
+    <color name="associatedShopsbackground">#8F8F8F</color>
+</resources>
